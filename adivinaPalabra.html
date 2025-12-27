@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>ARRRRG-divina</title>
+</head>
+
+<body>
+  <header>
+    <section class="contenedorIconos">
+      <button class="iconos btnContrasteAlto botonContraste" tabindex="2" aria-label="Activar/desactivar contraste alto">
+        <img id="iconoContraste" src="img/contraste.png" alt="Icono contraste">
+      </button>
+      <button class="iconos btnZoomIn" tabindex="3" aria-label="Aumentar zoom">Zoom+</button>
+      <button class="iconos btnZoomOut" tabindex="4" aria-label="Disminuir zoom">Zoom-</button>
+    </section>
+    <h1 tabindex="5">ADIVINA LA PALABRA</h1>
+  </header>
+
+  <main>
+    <div class="content">
+
+      <input type="text" id="inputLetra" class="lletra" maxlength="1">
+
+      <div class="inputs"></div>
+
+      <div class="detalles">
+        <section>
+          <p id="pistaJuego" class="pista parrafos">Pista: <span id="pista"></span></p>
+        </section>
+
+        <section class="numeros">
+          <div id="boton">
+            <button tabindex="1" class="reset_btn" aria-label="Adivinar palabra">Adivinar Palabra</button>
+          </div>
+          <p class="restantes parrafos">Intentos restantes: <br><span class="spans" id="intentosRestantes"></span></p>
+          <p class="letrasErroneas parrafos">Letras erróneas: <br><span class="spans" id="letrasErroneas"></span></p>
+        </section>
+      </div>
+      <div class="mostra"></div>
+    </div>
+  </main>
+
+  <script src="js/llamadasAlDOMyVariables.js"></script>
+  <script src="js/listadoPalabras.js"></script>
+  <script src="js/mensajes.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/accesibilidad.js"></script>
+</body>
+
+</html>
